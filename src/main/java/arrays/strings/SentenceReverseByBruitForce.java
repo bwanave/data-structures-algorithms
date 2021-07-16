@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class SentenceReverseBruitForce {
+class SentenceReverseByBruitForce {
 
     private static List<Integer> getSpaceIndexes(char[] arr) {
         List<Integer> spaceIndexes = new ArrayList<>();
