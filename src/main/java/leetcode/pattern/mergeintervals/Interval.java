@@ -1,8 +1,8 @@
 package leetcode.pattern.mergeintervals;
 
-class Interval {
-    int start;
-    int end;
+public class Interval {
+    public int start;
+    public int end;
 
     public Interval(int start, int end) {
         this.start = start;
