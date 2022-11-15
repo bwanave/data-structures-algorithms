@@ -1,4 +1,4 @@
-package restful.apis;
+package rest;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -15,7 +15,7 @@ import java.util.Iterator;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-public class RestSample {
+public class HackerRankIDERestSample {
 
     public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException, ParseException, ExecutionException {
         String body = fetch();
@@ -24,23 +24,21 @@ public class RestSample {
         System.out.println(jsonObject);
         System.out.println(jsonObject.get("status"));
         System.out.println(jsonObject.get("data"));
-        JSONArray jsonArray = (JSONArray) jsonObject.get("data");
 
-        // loop array
+        JSONArray jsonArray = (JSONArray) jsonObject.get("data");
         Iterator<JSONObject> iterator = jsonArray.iterator();
         while (iterator.hasNext()) {
             JSONObject obj = iterator.next();
-            System.out.println("--->" + obj);
+            System.out.println(obj);
             System.out.println(obj.get("id"));
         }
     }
 
     private static String fetch() throws URISyntaxException, InterruptedException, ExecutionException {
         HttpClient httpClient = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest
-                .newBuilder()
-                .uri(new URI("https://dummy.restapiexample.com/api/v1/employees"))
-                .GET().build();
+        HttpRequest request = HttpRequest.newBuilder()
+                                         .uri(new URI("https://dummy.restapiexample.com/api/v1/employees"))
+                                         .GET().build();
         CompletableFuture<HttpResponse<String>> future = httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString());
         return future.get().body();
     }
