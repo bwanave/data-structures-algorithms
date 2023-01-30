@@ -12,8 +12,7 @@ Implement the LFUCache class:
 * `int get(int key)` Gets the value of the `key` if the `key` exists in the cache. Otherwise, returns `-1`.
 * `void put(int key, int value)` Update the value of the `key` if present, or inserts the `key` if not already present.
   When the cache reaches its `capacity`, it should invalidate and remove the **least frequently used key** before
-  inserting a new item. For this problem, when there is a tie (i.e., two or more keys with the same frequency), the **
-  least recently used** `key` would be invalidated.
+  inserting a new item. For this problem, when there is a tie (i.e., two or more keys with the same frequency), the **least recently used** `key` would be invalidated.
 
 To determine the least frequently used key, a **use counter** is maintained for each key in the cache. The key with the
 smallest **use counter** is the least frequently used key.
