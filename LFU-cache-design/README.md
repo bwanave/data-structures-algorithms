@@ -2,7 +2,7 @@
 
 ###### Checkout my solution on [LeetCode](https://leetcode.com/problems/lfu-cache/solutions/3117785/java-hashmap-dll/)
 
-## Problem Description
+# Problem Description
 
 Design and implement a data structure for a Least Frequently Used (LFU) cache.
 
