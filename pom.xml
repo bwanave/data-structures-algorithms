@@ -11,8 +11,8 @@
     <modules>
         <module>LFU-cache-design</module>
         <module>LRU-cache-design</module>
-        <module>priority-cache-expiry-design</module>
-        <module>problem-solving</module>
+        <module>priority-expiry-cache</module>
+        <module>leetcode</module>
         <module>grokking-interview-patterns</module>
     </modules>
 

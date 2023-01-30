@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>priority-cache-expiry-design</artifactId>
+    <artifactId>priority-expiry-cache</artifactId>
 
     <properties>
         <maven.compiler.source>${java.version}</maven.compiler.source>
