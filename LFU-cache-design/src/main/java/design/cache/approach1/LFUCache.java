@@ -3,6 +3,9 @@ package design.cache.approach1;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Using HashMap and Custom Doubly Linked List
+ */
 class LFUCache {
 
     private final int capacity;
