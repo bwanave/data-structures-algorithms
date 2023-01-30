@@ -1,4 +1,8 @@
-# [LFU Cache](https://leetcode.com/problems/lfu-cache/description/)
+# [LFU Cache Design](https://leetcode.com/problems/lfu-cache/description/)
+
+###### Checkout my solution on [LeetCode](https://leetcode.com/problems/lfu-cache/solutions/3117785/java-hashmap-dll/)
+
+## Problem Description
 
 Design and implement a data structure for a Least Frequently Used (LFU) cache.
 
@@ -51,6 +55,7 @@ lfu.get(4);      // return 4
 ```
 
 ###
+
 **Constraints:**
 
 * `0 <= capacity <= 104 `
