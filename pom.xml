@@ -13,7 +13,6 @@
         <module>LRU-cache-design</module>
         <module>priority-expiry-cache</module>
         <module>leetcode</module>
-        <module>grokking-interview-patterns</module>
     </modules>
 
     <properties>
